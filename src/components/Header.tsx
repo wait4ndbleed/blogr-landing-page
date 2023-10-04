@@ -209,16 +209,19 @@ export const Header = () => {
                   }}
                 >
                   <li>
-                    <a href="#">Product</a>
+                    <a href="#">Overview</a>
                   </li>
                   <li>
-                    <a href="#">Product</a>
+                    <a href="#">Pricing</a>
                   </li>
                   <li>
-                    <a href="#">Product</a>
+                    <a href="#">Marketplace</a>
                   </li>
                   <li>
-                    <a href="#">Product</a>
+                    <a href="#">Features</a>
+                  </li>
+                  <li>
+                    <a href="#">Integrations</a>
                   </li>
                 </OpenMenu>
               )}
@@ -241,19 +244,16 @@ export const Header = () => {
                   }}
                 >
                   <li>
-                    <a href="#">Company</a>
+                    <a href="#">About</a>
                   </li>
                   <li>
-                    <a href="#">Company</a>
+                    <a href="#">Team</a>
                   </li>
                   <li>
-                    <a href="#">Company</a>
+                    <a href="#">Blog</a>
                   </li>
                   <li>
-                    <a href="#">Company</a>
-                  </li>
-                  <li>
-                    <a href="#">Company</a>
+                    <a href="#">Careers</a>
                   </li>
                 </OpenMenu>
               )}
