@@ -2,8 +2,9 @@ import { Header } from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
+import { Footer } from '@/components/Footer'
 
-const ubuntu = Ubuntu({ subsets: ['latin'], weight: ['400', '500', '700'] })
+const ubuntu = Ubuntu({ subsets: ['latin'], weight: ['300','400', '500', '700'] })
 
 export const metadata: Metadata = {
   title: 'Frontend Mentor | [Blogr]',
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={ubuntu.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
