@@ -7,10 +7,9 @@ const TagFooter = styled.footer`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1440px;
-  height: 400px;
   margin: auto;
   padding: 65px 167px;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
   background-color: var(--very-dark-blue);
   border-radius: 0 100px 0 0;
 

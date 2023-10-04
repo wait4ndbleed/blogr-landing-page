@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className={styles.main}>
-        <HomeTop />
-        <HomeMid />
-        <HomeBot />
-      </main>
+        <main className={styles.main}>
+          <HomeTop />
+          <HomeMid />
+          <HomeBot />
+        </main>
       <Footer />
     </>
   );
