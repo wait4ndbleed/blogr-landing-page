@@ -1,6 +1,9 @@
 "use client";
 
+import { Overpass } from "next/font/google";
 import styled from "styled-components";
+
+const overpass = Overpass({ subsets: ["latin"], weight: ["300", "600"] });
 
 const Design = styled.section`
   display: flex;
@@ -33,6 +36,7 @@ const Text = styled.div`
     color: var(--text-body);
     margin-bottom: 20px;
     font-size: 24px;
+    font-weight: 600;
   }
 
   p {
@@ -51,7 +55,7 @@ export const HomeBot = () => {
     <Design>
       <Text>
         <div>
-          <h3>Free, open, simple</h3>
+          <h3  className={overpass.className}>Free, open, simple</h3>
           <p>
             Blogr is a free and open source application backed by a large
             community of helpful developers, It supports features such as code
@@ -62,7 +66,7 @@ export const HomeBot = () => {
           </p>
         </div>
         <div>
-          <h3>Powerful tooling</h3>
+          <h3 className={overpass.className}>Powerful tooling</h3>
           <p>
             Batteries included. We built a simple and straightforward CLI tool
             that makes customization and deployment a breeze, but capable of

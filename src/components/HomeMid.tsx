@@ -39,7 +39,7 @@ const Text = styled.div`
   z-index: 2;
 
   h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 30px;
     margin-bottom: 30px;
   }
@@ -60,7 +60,7 @@ export const HomeMid = () => {
           <img src="../assets/images/illustration-phones.svg" alt="" />
         </Phone>
         <Text>
-          <h2>State og the Art Infrastructure</h2>
+          <h2 className={overpass.className}>State og the Art Infrastructure</h2>
           <p className={overpass.className}>
             With reliability and speed in mind, worldwide data centers provide
             the backbone for ultra-fast connectivity. This ensures your site

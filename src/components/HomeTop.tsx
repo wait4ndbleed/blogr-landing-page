@@ -1,6 +1,9 @@
 "use client"
 
+import { Overpass } from "next/font/google";
 import styled from "styled-components"
+
+const overpass = Overpass({ subsets: ["latin"], weight: ["300", "600"] });
 
 const Design = styled.section`
     max-width: 1440px;
@@ -19,7 +22,7 @@ const Design = styled.section`
         text-align: center;
         margin-bottom: 80px;
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         color: var(--text-body);
     }
 `;
@@ -31,6 +34,7 @@ const Text = styled.div`
         color: var(--text-body);
         margin-bottom: 20px;
         font-size: 24px;
+        font-weight: 600;
     }
 
     p {
@@ -47,16 +51,16 @@ const Text = styled.div`
 export const HomeTop = () => {
     return (
         <Design>
-            <h2>Designed for the future</h2>
+            <h2 className={overpass.className}>Designed for the future</h2>
             <Text>
                 <div>
-                    <h3>Introducing an extensible editor</h3>
+                    <h3 className={overpass.className}>Introducing an extensible editor</h3>
                     <p>
                         Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
                     </p>
                 </div>
                 <div>
-                    <h3>Robust content management</h3>
+                    <h3 className={overpass.className}>Robust content management</h3>
                     <p>
                         Flexibile content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
                     </p>
