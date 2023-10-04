@@ -4,7 +4,7 @@ export const SvgArrowUp = () => {
       <path
         fill="none"
         stroke="#FFF"
-        stroke-width="2"
+        strokeWidth={2}
         opacity=".75"
         d="M1 6l4-4 4 4"
       />
