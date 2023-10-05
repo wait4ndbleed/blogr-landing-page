@@ -17,12 +17,21 @@ const State = styled.section`
   background-image: url("../assets/images/bg-circles.png");
   background-repeat: no-repeat;
   border-radius: 0 100px 0 100px;
+
+  @media (max-width: 750px) {
+    padding: 0 25px;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    background-image: url("../assets/images/bg-circles-mobile.png");
+    background-repeat: no-repeat;
+    border-radius: 0 100px 0 100px;
+  }
 `;
 
 const Phone = styled.div`
   padding: 0;
-  flex: 1;
-  height: 1%;
+  max-width: 60%;
   img {
     width: 455px;
     position: relative;
@@ -31,10 +40,34 @@ const Phone = styled.div`
     padding: 0;
     z-index: 3;
   }
+
+  @media (max-width: 768px) {
+    width: auto;
+    min-width: 50%;
+
+    img {
+      width: 200%;
+      top: -160px;
+      left: -70%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    width: auto;
+    max-height: 150px;
+
+    img {
+      width: 300px;
+      top: -160px;
+      left: 0;
+    }
+  }
 `;
 
 const Text = styled.div`
   flex: 1;
+  min-width: 50%;
+  max-width: 70%;
   margin: 80px 0;
   z-index: 2;
 
@@ -50,6 +83,35 @@ const Text = styled.div`
     line-height: 28px;
     color: var(--grayish);
   }
+
+  @media (max-width: 1024px) {
+    margin: 40px 0 0 0;
+  }
+
+  @media (max-width: 750px) {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    width: 100%;
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 20px;
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 20px;
+    }
+  }
 `;
 
 export const HomeMid = () => {
@@ -60,7 +122,9 @@ export const HomeMid = () => {
           <img src="../assets/images/illustration-phones.svg" alt="" />
         </Phone>
         <Text>
-          <h2 className={overpass.className}>State og the Art Infrastructure</h2>
+          <h2 className={overpass.className}>
+            State og the Art Infrastructure
+          </h2>
           <p className={overpass.className}>
             With reliability and speed in mind, worldwide data centers provide
             the backbone for ultra-fast connectivity. This ensures your site

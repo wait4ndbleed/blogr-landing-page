@@ -10,10 +10,7 @@ const Design = styled.section`
   justify-content: end;
   max-width: 1440px;
   width: 100%;
-  padding-left: 167px;
-  padding-right: 167px;
-  padding-bottom: 60px;
-  padding-top: 100px;
+  padding: 100px 167px 60px 167px;
   background-image: url("../assets/images/illustration-laptop-desktop.svg");
   background-size: 60%;
   background-repeat: no-repeat;
@@ -26,6 +23,15 @@ const Design = styled.section`
     font-size: 32px;
     font-weight: 500;
     color: var(--text-body);
+  }
+  
+  @media (max-width: 768px) {
+    padding: 400px 15px 25px 15px;
+    margin-top: 20px;
+
+    background-image: url("../assets/images/illustration-laptop-mobile.svg");
+    background-position: center top;
+    background-size: 510px;
   }
 `;
 
@@ -47,6 +53,12 @@ const Text = styled.div`
 
   div {
     margin-bottom: 35px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 30px;
   }
 `;
 
