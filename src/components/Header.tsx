@@ -13,23 +13,7 @@ import { SvgArrowUpMobile } from "./SvgArrowUpMobile";
 
 const overpass = Overpass({ subsets: ["latin"], weight: ["300", "600"] });
 
-export const Header = () => {
-  const [productIsOpen, setProductIsOpen] = useState<boolean>(false);
-  const [productMobileIsOpen, setProductMobileIsOpen] =
-    useState<boolean>(false);
-  const [companyIsOpen, setCompanyIsOpen] = useState<boolean>(false);
-  const [companyMobileIsOpen, setCompanyMobileIsOpen] =
-    useState<boolean>(false);
-  const [connectIsOpen, setConnectIsOpen] = useState<boolean>(false);
-  const [connectMobileIsOpen, setConnectMobileIsOpen] =
-    useState<boolean>(false);
-  const [menuMobile, setMenuMobile] = useState<boolean>(false);    
-
-  const productRef = useRef(false);
-  const companyRef = useRef(false);
-  const connectRef = useRef(false);
-
-  const TagHeader = styled.header`
+const TagHeader = styled.header`
     display: flex;
     flex-direction: column;
     max-width: 1440px;
@@ -294,6 +278,24 @@ export const Header = () => {
     }
   `;
 
+
+export const Header = () => {
+  const [productIsOpen, setProductIsOpen] = useState<boolean>(false);
+  const [productMobileIsOpen, setProductMobileIsOpen] =
+    useState<boolean>(false);
+  const [companyIsOpen, setCompanyIsOpen] = useState<boolean>(false);
+  const [companyMobileIsOpen, setCompanyMobileIsOpen] =
+    useState<boolean>(false);
+  const [connectIsOpen, setConnectIsOpen] = useState<boolean>(false);
+  const [connectMobileIsOpen, setConnectMobileIsOpen] =
+    useState<boolean>(false);
+  const [menuMobile, setMenuMobile] = useState<boolean>(false);    
+
+  const productRef = useRef(false);
+  const companyRef = useRef(false);
+  const connectRef = useRef(false);
+
+  
   const handleOpenProduct = () => {
     setProductIsOpen(true);
     productRef.current = true;
