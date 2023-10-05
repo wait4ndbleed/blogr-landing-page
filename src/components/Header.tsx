@@ -335,6 +335,9 @@ export const Header = () => {
 
   const handleMenuMobile = () => {
     setMenuMobile((prev) => !prev);
+    setProductMobileIsOpen(false);
+    setCompanyMobileIsOpen(false);
+    setConnectMobileIsOpen(false);
   };
 
   const [isMobile, setIsMobile] = useState(false);
@@ -349,7 +352,12 @@ export const Header = () => {
       setIsMobile(true);
     } else {
       setIsMobile(false);
+      setMenuMobile(false);
+      setProductMobileIsOpen(false);
+      setCompanyMobileIsOpen(false);
+      setConnectMobileIsOpen(false);
     }
+    
   };
 
   return (
