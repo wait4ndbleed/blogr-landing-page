@@ -8,14 +8,14 @@ const overpass = Overpass({ subsets: ["latin"], weight: ["300", "600"] });
 const Design = styled.section`
   display: flex;
   justify-content: end;
+  align-items: center;
   max-width: 1440px;
   width: 100%;
-  padding: 100px 167px 60px 167px;
+  padding: 260px 167px 180px 167px;
   background-image: url("../assets/images/illustration-laptop-desktop.svg");
   background-size: 60%;
   background-repeat: no-repeat;
-  background-position-x: -225px;
-  background-position-y: 60%;
+  background-position: -225px 100px;
 
   h2 {
     text-align: center;
@@ -27,7 +27,8 @@ const Design = styled.section`
   
   @media (max-width: 768px) {
     padding: 400px 15px 25px 15px;
-    margin-top: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 
     background-image: url("../assets/images/illustration-laptop-mobile.svg");
     background-position: center top;

@@ -6,8 +6,8 @@ import styled from "styled-components";
 const overpass = Overpass({ subsets: ["latin"], weight: ["300", "600"] });
 
 const State = styled.section`
-  margin-top: 50px;
   width: 100%;
+  height: 450px;
   max-width: 1440px;
   padding: 0 167px;
   display: flex;
@@ -18,7 +18,11 @@ const State = styled.section`
   background-repeat: no-repeat;
   border-radius: 0 100px 0 100px;
 
+  @media (max-width: 768px) {
+    height: 320px;
+  }
   @media (max-width: 750px) {
+    height: 450px;
     padding: 0 25px;
     flex-direction: column;
     text-align: center;
@@ -67,7 +71,8 @@ const Phone = styled.div`
 const Text = styled.div`
   flex: 1;
   min-width: 50%;
-  max-width: 70%;
+  max-width: 100%;
+  padding: 0 15px;
   margin: 80px 0;
   z-index: 2;
 

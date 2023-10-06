@@ -9,13 +9,11 @@ const overpass = Overpass({ subsets: ["latin"], weight: ["300", "600"] });
 const Design = styled.section`
   max-width: 1440px;
   width: 100%;
-  padding: 0 167px 60px 167px;
-  margin-top: 100px;
+  padding: 170px 167px 0px 167px;
   background-image: url("../assets/images/illustration-editor-desktop.svg");
   background-size: 60%;
   background-repeat: no-repeat;
-  background-position-x: 145%;
-  background-position-y: center;
+  background-position: 145% 80px;
 
   h2 {
     text-align: center;
@@ -26,9 +24,9 @@ const Design = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 100px;
+    padding: 0 15px 60px 15px;
+    margin-top: 100px;
+    margin-bottom: 150px;
 
     background-image: url("../assets/images/illustration-editor-mobile.svg");
     background-size: 410px;
