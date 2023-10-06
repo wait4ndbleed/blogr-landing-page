@@ -11,11 +11,11 @@ const Design = styled.section`
   align-items: center;
   max-width: 1440px;
   width: 100%;
-  padding: 260px 167px 180px 167px;
+  padding: 155px 167px 220px 167px;
   background-image: url("../assets/images/illustration-laptop-desktop.svg");
   background-size: 60%;
   background-repeat: no-repeat;
-  background-position: -225px 100px;
+  background-position: -225px 0;
 
   h2 {
     text-align: center;
