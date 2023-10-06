@@ -9,11 +9,11 @@ const overpass = Overpass({ subsets: ["latin"], weight: ["300", "600"] });
 const Design = styled.section`
   max-width: 1440px;
   width: 100%;
-  padding: 170px 167px 200px 167px;
+  padding: 170px 167px 230px 167px;
   background-image: url("../assets/images/illustration-editor-desktop.svg");
   background-size: 60%;
   background-repeat: no-repeat;
-  background-position: 145% 80px;
+  background-position: 145% 60px;
 
   h2 {
     text-align: center;
